@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.1d9c0e92.chunk.css",
+    "main.css": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.a5ee949e.chunk.css",
     "main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.ac095e62.chunk.js",
     "main.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.ac095e62.chunk.js.map",
     "runtime-main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/runtime-main.6b172663.js",
@@ -8,9 +8,9 @@
     "static/js/2.b9bd4f38.chunk.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.b9bd4f38.chunk.js",
     "static/js/2.b9bd4f38.chunk.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.b9bd4f38.chunk.js.map",
     "index.html": "/Bookmark-Landing-Page-Reactjs-Sass/index.html",
-    "precache-manifest.9fe2327cae3cb8bb6efbe139e9ea486e.js": "/Bookmark-Landing-Page-Reactjs-Sass/precache-manifest.9fe2327cae3cb8bb6efbe139e9ea486e.js",
+    "precache-manifest.c0aeccdd628101f34fdc76e76de3b82f.js": "/Bookmark-Landing-Page-Reactjs-Sass/precache-manifest.c0aeccdd628101f34fdc76e76de3b82f.js",
     "service-worker.js": "/Bookmark-Landing-Page-Reactjs-Sass/service-worker.js",
-    "static/css/main.1d9c0e92.chunk.css.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.1d9c0e92.chunk.css.map",
+    "static/css/main.a5ee949e.chunk.css.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.a5ee949e.chunk.css.map",
     "static/js/2.b9bd4f38.chunk.js.LICENSE.txt": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.b9bd4f38.chunk.js.LICENSE.txt",
     "static/media/bg-dots.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/bg-dots.7c66c472.svg",
     "static/media/icon-arrow.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-arrow.38993f94.svg",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.6b172663.js",
     "static/js/2.b9bd4f38.chunk.js",
-    "static/css/main.1d9c0e92.chunk.css",
+    "static/css/main.a5ee949e.chunk.css",
     "static/js/main.ac095e62.chunk.js"
   ]
 }
