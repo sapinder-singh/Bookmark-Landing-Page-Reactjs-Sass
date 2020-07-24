@@ -1,0 +1,53 @@
+@import "../mixins.scss";
+
+.faqs {
+	margin: 200px 25vw 100px;
+	text-align: center;
+
+	.title-div {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	// FAQ Navigators
+	.select {
+		margin-top: 50px;
+		text-align: left;
+		display: flex;
+		flex-flow: column nowrap;
+		// for the last .faq option
+		border-bottom: 1px solid rgb(145, 148, 161);
+
+		[class^=faq] {
+			border-top: 1px solid rgb(145, 148, 161);
+			padding: 1rem;
+			cursor: pointer;
+			font-weight: 500;
+
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-items: center;
+
+			.arrow-icon {
+				margin-left: 5px;
+			}
+		}
+
+		[class^=answer] {
+			display: none;
+			padding: 1rem;
+			color: rgb(145, 148, 161);			
+
+			&.show-answer {
+				display: initial;
+			}
+		}
+	}
+
+	a {
+		@include cta-box(hsl(231, 69%, 60%), white);
+		margin-top: 50px;
+		padding: 15px 20px !important;
+	}
+}

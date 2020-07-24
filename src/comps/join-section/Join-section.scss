@@ -1,0 +1,62 @@
+@import "../mixins.scss";
+
+.join-section {
+	padding: 50px 20px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+
+	text-align: center;
+	background: rgb(83, 104, 223);
+	color: white;
+
+	> * {
+		margin: 20px auto;
+	}
+
+	> small {
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+
+	form {
+		display: flex;
+		flex-flow: row nowrap;
+		
+		.email, button {
+			border: none;
+		}
+		.input-wrapper {
+			margin-right: 20px;
+			position: relative;
+			
+			.email {
+				@include cta-box(white, grey);
+				padding-left: 20px;
+				width: 200px;
+				outline: none;
+
+				&.error {
+					transition: none;
+					background: white url("../../images/icon-error.svg") right 10px center no-repeat;
+				}
+			}
+			.error-message {
+				display: none;
+				position: absolute;
+				top: 105%; left: 0; right: 0;
+
+				padding: 2px 0;
+				font-size: .6em;
+				background: rgba(250, 87, 87, .8);
+				border-radius: 10px;
+			}
+		}
+		
+		button {
+			@include cta-box(rgb(250, 87, 87), white);
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
+}
