@@ -18,15 +18,15 @@ export default function NavBar() {
 	return (
 		<nav className="navbar">
 
-			<a className="brand" href="/">
+			<a className="brand" href="./">
 				<LogoBookmark className="logo" alt="logo-bookmark" />
 			</a>
 
 			<div className="navigation">
-				<a className="navlink" href="/">Features</a>
-				<a className="navlink" href="/">Pricing</a>
-				<a className="navlink" href="/">Contact</a>
-				<a className="navlink login" href="/">Login</a>
+				<a className="navlink" href="./">Features</a>
+				<a className="navlink" href="./">Pricing</a>
+				<a className="navlink" href="./">Contact</a>
+				<a className="navlink login" href="./">Login</a>
 			</div>
 
 			<img className="menu-icon" src={menuIcon} onClick={revealMenu} alt="menu" />
