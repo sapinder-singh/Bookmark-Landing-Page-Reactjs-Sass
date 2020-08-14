@@ -16,6 +16,7 @@
 		
 		.features-section {
 			.main-text-wrapper {
+				-ms-grid-columns: 15vw 30px auto 30px 15vw;
 				grid-template-columns: 15vw 30px auto 30px 15vw;
 			}
 		}
@@ -57,19 +58,35 @@
 			}
 			.navigation {
 				position: absolute; top: 70%; right: 5vw;
-				flex-direction: column;
-				justify-content: space-between;
-				align-items: center;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+								flex-direction: column;
+								
+				-webkit-box-pack: justify;
+				    -ms-flex-pack: justify;
+								justify-content: space-between;
+								
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 
 				z-index: 2;
 				background: rgba(83, 104, 223, .6);
 				border-radius: 5px;
 
-				clip-path: circle(0 at 100% 0);
+				-webkit-clip-path: circle(0 at 100% 0);
+				        clip-path: circle(0 at 100% 0);
+				-webkit-transition: -webkit-clip-path .5s;
+				transition: -webkit-clip-path .5s;
+				
+				-o-transition: clip-path .5s;
 				transition: clip-path .5s;
+				transition: clip-path .5s, -webkit-clip-path .5s;
 				
 				&.reveal-menu {
-					clip-path: circle(100%);
+					-webkit-clip-path: circle(100%);
+					        clip-path: circle(100%);
 				}
 				.navlink {
 					color: white;
@@ -79,14 +96,26 @@
 		}
 
 		footer {
-			flex-direction: column;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
 			padding: 5% 0 0;
-			align-items: center;
-			justify-content: space-between;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
 
 			.navigation {
-				flex: 0 0 auto;
-				flex-direction: column;
+				-webkit-box-flex: 0;
+				    -ms-flex: 0 0 auto;
+				        flex: 0 0 auto;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
 			}
 
 			.navigation .navlink,
@@ -119,20 +148,29 @@
 			}
 
 			.features-section .main-text-wrapper {
+				-ms-grid-columns: 5vw auto 5vw;
 				grid-template-columns: 5vw auto 5vw;
-				grid-template-areas:
+				    grid-template-areas:
 				"...  title-div  ..."
 				"...  select     ...";
 
 				.select {
-					flex-direction: column;
+					-webkit-box-orient: vertical;
+					-webkit-box-direction: normal;
+					    -ms-flex-direction: column;
+					        flex-direction: column;
 					margin: auto;
 				}
 			}
 
 			.join-section form {
-				flex-direction: column;
-				align-items: center;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 				.input-wrapper { margin: 0 0 30px }
 			}
 		}

@@ -5,8 +5,13 @@
 	text-align: center;
 
 	.main-text-wrapper {
+		display: -ms-grid;
 		display: grid;
+
+		-ms-grid-columns: 25vw 30px auto 30px 25vw;
 		grid-template-columns: 25vw 30px auto 30px 25vw;
+
+		-ms-grid-rows: auto 50px auto;
 		grid-template-areas: 
 		"...   ...    title-div  ...   ..."
 		"...  select  select   select  ...";
@@ -24,9 +29,18 @@
 		.select {
 			grid-area: select;
 
+			display: -webkit-box;
+
+			display: -ms-flexbox;
+
 			display: flex;
-			flex-flow: row nowrap;
-			justify-content: space-between;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-flow: row nowrap;
+			        flex-flow: row nowrap;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
 
 			option {
 				color: rgb(145, 148, 161);
@@ -47,7 +61,11 @@
 				position: absolute; 
 				top: 0; left: 0;
 				height: 100%; width: 201px;
+
+				-webkit-transition: all .2s ease-in-out;
+				-o-transition: all .2s ease-in-out;
 				transition: all .2s ease-in-out;
+				
 				border-radius: 25px;
 				background: hsl(231, 69%, 60%);
 			}
@@ -56,8 +74,8 @@
 
 
 	.feature1, .feature2, .feature3 {
-		// display initially applied to feature1
 		display: none;
+		
 		&.show-feature {
 			display: initial !important;
 		}
