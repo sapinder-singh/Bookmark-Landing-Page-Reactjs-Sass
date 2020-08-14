@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4bbc537b02e8f10a151550262900622e",
+    "revision": "c77bd8717bc1d1ed38bb6e8e348733c8",
     "url": "/Bookmark-Landing-Page-Reactjs-Sass/index.html"
   },
   {
-    "revision": "1465df7f889cc6788674",
-    "url": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.a5ee949e.chunk.css"
+    "revision": "25cadf4ebf575200d03f",
+    "url": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.67dfe865.chunk.css"
   },
   {
     "revision": "4fe8e5c16c3cac4ac7ad",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.b9bd4f38.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1465df7f889cc6788674",
-    "url": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.1dd0a308.chunk.js"
+    "revision": "25cadf4ebf575200d03f",
+    "url": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.b796b463.chunk.js"
   },
   {
     "revision": "db3d698c8394d75a7fbf",

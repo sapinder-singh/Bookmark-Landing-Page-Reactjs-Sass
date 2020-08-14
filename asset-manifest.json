@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.a5ee949e.chunk.css",
-    "main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.1dd0a308.chunk.js",
-    "main.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.1dd0a308.chunk.js.map",
+    "main.css": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.67dfe865.chunk.css",
+    "main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.b796b463.chunk.js",
+    "main.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.b796b463.chunk.js.map",
     "runtime-main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/runtime-main.6b172663.js",
     "runtime-main.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/runtime-main.6b172663.js.map",
     "static/js/2.b9bd4f38.chunk.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.b9bd4f38.chunk.js",
     "static/js/2.b9bd4f38.chunk.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.b9bd4f38.chunk.js.map",
     "index.html": "/Bookmark-Landing-Page-Reactjs-Sass/index.html",
-    "precache-manifest.2505f948aa7e1fa2367d0641069cac38.js": "/Bookmark-Landing-Page-Reactjs-Sass/precache-manifest.2505f948aa7e1fa2367d0641069cac38.js",
+    "precache-manifest.6bfc01e0bea8e8ffb72661d364b70d3f.js": "/Bookmark-Landing-Page-Reactjs-Sass/precache-manifest.6bfc01e0bea8e8ffb72661d364b70d3f.js",
     "service-worker.js": "/Bookmark-Landing-Page-Reactjs-Sass/service-worker.js",
-    "static/css/main.a5ee949e.chunk.css.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.a5ee949e.chunk.css.map",
+    "static/css/main.67dfe865.chunk.css.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.67dfe865.chunk.css.map",
     "static/js/2.b9bd4f38.chunk.js.LICENSE.txt": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.b9bd4f38.chunk.js.LICENSE.txt",
     "static/media/bg-dots.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/bg-dots.7c66c472.svg",
     "static/media/icon-arrow.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-arrow.38993f94.svg",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.6b172663.js",
     "static/js/2.b9bd4f38.chunk.js",
-    "static/css/main.a5ee949e.chunk.css",
-    "static/js/main.1dd0a308.chunk.js"
+    "static/css/main.67dfe865.chunk.css",
+    "static/js/main.b796b463.chunk.js"
   ]
 }
