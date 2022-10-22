@@ -1,76 +1,83 @@
-@import "../mixins.scss";
+@import '../../mixins.scss';
 
-.join-section {
-	padding: 50px 20px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	
-	    -ms-flex-flow: column nowrap;
-	        flex-flow: column nowrap;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+.form-section {
+  padding: 50px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
 
-	text-align: center;
-	background: rgb(83, 104, 223);
-	color: white;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 
-	> * {
-		margin: 20px auto;
-	}
+  text-align: center;
+  background: rgb(83, 104, 223);
+  color: white;
 
-	> small {
-		text-transform: uppercase;
-		letter-spacing: 5px;
-	}
+  > * {
+    margin: 20px auto;
+  }
 
-	form {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: row nowrap;
-		        flex-flow: row nowrap;
-		
-		.email, button {
-			border: none;
-		}
-		.input-wrapper {
-			margin-right: 20px;
-			position: relative;
-			
-			.email {
-				@include cta-box(white, grey);
-				padding-left: 20px;
-				width: 200px;
-				outline: none;
+  > small {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
 
-				&.error {
-					-webkit-transition: none;
-					-o-transition: none;
-					transition: none;
-					background: white url("../../images/icon-error.svg") right 10px center no-repeat;
-				}
-			}
-			.error-message {
-				display: none;
-				position: absolute;
-				top: 105%; left: 0; right: 0;
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
 
-				padding: 2px 0;
-				font-size: .6em;
-				background: rgba(250, 87, 87, .8);
-				border-radius: 10px;
-			}
-		}
-		
-		button {
-			@include cta-box(rgb(250, 87, 87), white);
-			font-weight: bold;
-			cursor: pointer;
-		}
-	}
+    .email,
+    button {
+      border: none;
+    }
+    .input-wrapper {
+      margin-right: 20px;
+      position: relative;
+
+      .email {
+        @include cta-box(white, grey);
+        padding-left: 20px;
+        width: 200px;
+        outline: none;
+
+        &:not(:placeholder-shown):focus-visible:invalid {
+          -webkit-transition: none;
+          -o-transition: none;
+          transition: none;
+          background: white url('../../images/icon-error.svg') right 10px center
+            no-repeat;
+        }
+        &:not(:placeholder-shown):focus-visible:invalid + .error-message {
+          display: initial;
+        }
+      }
+      .error-message {
+        display: none;
+        position: absolute;
+        top: 105%;
+        left: 0;
+        right: 0;
+
+        padding: 2px 0;
+        font-size: 0.6em;
+        background: rgba(250, 87, 87, 0.8);
+        border-radius: 10px;
+      }
+    }
+
+    button {
+      @include cta-box(rgb(250, 87, 87), white);
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
 }

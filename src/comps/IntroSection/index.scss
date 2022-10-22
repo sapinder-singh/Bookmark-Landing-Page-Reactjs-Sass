@@ -1,43 +1,59 @@
-@import "../mixins.scss";
+@import '../../mixins.scss';
+@import '../../animations.scss';
 
 .intro-section {
-	
-	.text-wrapper {
-		margin-left: 10vw;
-		padding: 50px 0;
+  margin-top: 125px;
 
-		.download-links {
-			white-space: nowrap;
+  .text-wrapper {
+    margin-left: 10vw;
+    padding: 50px 0;
 
-			.cta {
-				margin: 25px 10px 0 0;
-				padding: 15px 20px !important;
+    .download-links {
+      white-space: nowrap;
 
-				&:first-of-type {
-					@include cta-box(hsl(231, 69%, 60%), white);
-				}
-				&:last-of-type {
-					@include cta-box(white);
-				}
-			}
-		}
-	}
+      .cta {
+        margin: 25px 10px 0 0;
+        padding: 15px 20px !important;
 
-	.img-wrapper {
-		float: right;
+        &:first-of-type {
+          @include cta-box(hsl(231, 69%, 60%), white);
+        }
+        &:last-of-type {
+          @include cta-box(white);
+        }
+      }
+    }
+  }
 
-		position: relative;
+  .img-wrapper {
+    float: right;
+    position: relative;
+    --img-cubic-bezier: cubic-bezier(0.08, 0.53, 0.21, 1);
+    --after-cubiz-bezier: cubic-bezier(0.08, 0.53, 0.41, 1.26);
 
-		&::after {
-			content: "";
-			background: hsl(231, 69%, 60%);
-			width: 80%;
-			height: 70%;
-			
-			position: absolute;
-			top: 30%; right: 0;
-			border-radius: 0 0 0 50%;
-			z-index: -1;
-		}
-	}
+    .intro-img {
+      transform: scale(0, 0);
+      transform-origin: bottom right;
+      animation: pop-in-from-bottom-right 0.5s 0.8s var(--img-cubic-bezier)
+        forwards;
+    }
+
+    &::after {
+      content: '';
+      background: hsl(231, 69%, 60%);
+      width: 80%;
+      height: 70%;
+
+      position: absolute;
+      top: 30%;
+      right: 0;
+      border-radius: 0 0 0 50%;
+      z-index: -1;
+
+      transform: scale(0, 1);
+      transform-origin: right;
+      animation: pop-in-from-bottom-right 0.5s 0.3s var(--after-cubiz-bezier)
+        forwards;
+    }
+  }
 }

@@ -32,29 +32,18 @@ export const FaqData = [
   },
 ];
 
-export function FaqItem(props) {
+export default function FaqItem(props, index) {
+  const checkboxId = `checkbox${index + 1}`;
   return (
-    <>
-      <label className={props.quesId}>
+    <React.Fragment key={props.quesId}>
+      <label htmlFor={checkboxId} className={props.quesId}>
         {props.question}
-
-        <input
-          type="checkbox"
-          id="checkbox"
-          style={{ display: 'none' }}
-          onChange={e => toggleAnswer(e)}
-        />
 
         <img src={IconArrow} className="arrow-icon" alt="icon-dropdown" />
       </label>
+      <input type="checkbox" id={checkboxId} />
 
-      <small className={props.ansId}>{props.answer}</small>
-    </>
+      <small className={`${props.ansId} show`}>{props.answer}</small>
+    </React.Fragment>
   );
-}
-
-function toggleAnswer(e) {
-  // event target here is the checkbox no matter where we click on label
-  let answer = e.target.parentNode.nextElementSibling;
-  answer.classList.toggle('show-answer');
 }

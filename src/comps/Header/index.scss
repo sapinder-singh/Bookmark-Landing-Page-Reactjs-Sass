@@ -1,0 +1,58 @@
+@import '../../mixins.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: white;
+}
+.header .header-inner-wrapper {
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 50px 10vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .logo {
+    margin: auto 0;
+  }
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  .navigation {
+    flex: 0.1 0 450px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    justify-content: space-between;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    .navlink {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      &.login {
+        @include cta-box(#fa5757, white);
+      }
+    }
+  }
+}
