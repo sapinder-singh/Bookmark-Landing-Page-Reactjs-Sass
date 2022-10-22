@@ -1,7 +1,4 @@
 import React from 'react';
-import tabSVG1 from '../../images/illustration-features-tab-1.svg';
-import tabSVG2 from '../../images/illustration-features-tab-2.svg';
-import tabSVG3 from '../../images/illustration-features-tab-3.svg';
 
 export const featuresData = [
   {
@@ -24,13 +21,17 @@ export const featuresData = [
   },
 ];
 
-export function FeatureItem(props, index) {
-  let activeFeature = index === 0 ? 'show-feature' : '';
-
+export default function FeatureItem(props) {
   return (
-    <div key={props.id} className={props.id + ' ' + activeFeature}>
+    <div key={props.id} className={props.class + ' ' + props.state}>
       <div className="img-wrapper">
-        <img className="feature-img" src={renderSVG(index + 1)} alt="img-tab" />
+        <img
+          className="feature-img"
+          src={`${
+            process.env.PUBLIC_URL
+          }/images/illustration-features-tab-${props.class.slice(-1)}.svg`}
+          alt="img-tab"
+        />
       </div>
 
       <div className="text-wrapper">
@@ -42,17 +43,4 @@ export function FeatureItem(props, index) {
       </div>
     </div>
   );
-}
-
-function renderSVG(serialNo) {
-  switch (serialNo) {
-    case 1:
-      return tabSVG1;
-    case 2:
-      return tabSVG2;
-    case 3:
-      return tabSVG3;
-    default:
-      return new Error();
-  }
 }

@@ -1,15 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import './index.scss';
-import { NavigateFeatures } from './navigateFeatures.js';
-import { featuresData, FeatureItem } from './FeatureItem.jsx';
+import FeatureItem, { featuresData } from './FeatureItem.jsx';
+import useOptions from '../../hooks/useOptions';
 
 export default function FeaturesSection() {
-  let [activeFeature, setActiveFeature] = useState(0); // 0 is the index of activeFeature
+  const [optionsState, selectOption] = useOptions({
+    numberOfOptions: 3,
+    initialActiveIndex: 0,
+  });
 
-  const handleClick = e => {
-    if (e.target.value === activeFeature) return;
-    else setActiveFeature(NavigateFeatures(activeFeature, e.target.value));
+  const handleClick = e => selectOption({ indexToSelect: e.target.value });
+
+  const highlightOption = option => {
+    let highlightOption = document.querySelector(
+      '.features-section .select .highlight-active-option'
+    );
+
+    highlightOption.style.top = option.offsetTop + 'px';
+    highlightOption.style.left = option.offsetLeft + 'px';
+
+    highlightOption.style.width = option.offsetWidth + 'px';
+    highlightOption.style.height = option.offsetHeight + 'px';
   };
+
+  useEffect(() => {
+    const activeOption = document.querySelector(
+      `.features-section .select .option.active`
+    );
+    highlightOption(activeOption);
+  }, [optionsState]);
 
   return (
     <section className="features-section">
@@ -25,22 +44,39 @@ export default function FeaturesSection() {
 
         <div className="select">
           <div className="highlight-active-option" />
-          <option className="option1 active" value="0" onClick={handleClick}>
+          <option
+            className={`option ${optionsState[0]}`}
+            value="0"
+            onClick={handleClick}>
             Simple Bookmarking
           </option>
 
-          <option className="option2" value="1" onClick={handleClick}>
+          <option
+            className={`option ${optionsState[1]}`}
+            value="1"
+            onClick={handleClick}>
             Speedy Searching
           </option>
 
-          <option className="option3" value="2" onClick={handleClick}>
+          <option
+            className={`option ${optionsState[2]}`}
+            value="2"
+            onClick={handleClick}>
             Easy Sharing
           </option>
         </div>
       </div>
 
       {/* FeatureItems */}
-      {featuresData.map(FeatureItem)}
+      {featuresData.map((props, index) => (
+        <FeatureItem
+          key={props.id}
+          class={props.id}
+          title={props.title}
+          brief={props.brief}
+          state={optionsState[index]}
+        />
+      ))}
     </section>
   );
 }

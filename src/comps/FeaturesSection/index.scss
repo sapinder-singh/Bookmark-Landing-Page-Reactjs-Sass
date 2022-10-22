@@ -1,122 +1,131 @@
-@import "../mixins.scss";
+@import '../../mixins.scss';
 
 .features-section {
-	margin: 100px auto 150px;
-	text-align: center;
+  margin: 100px auto 150px;
+  text-align: center;
 
-	.main-text-wrapper {
-		display: -ms-grid;
-		display: grid;
+  .main-text-wrapper {
+    display: -ms-grid;
+    display: grid;
 
-		-ms-grid-columns: 25vw 30px auto 30px 25vw;
-		grid-template-columns: 25vw 30px auto 30px 25vw;
+    -ms-grid-columns: 25vw 30px auto 30px 25vw;
+    grid-template-columns: 25vw 30px auto 30px 25vw;
 
-		-ms-grid-rows: auto 50px auto;
-		grid-template-areas: 
-		"...   ...    title-div  ...   ..."
-		"...  select  select   select  ...";
-		row-gap: 50px;
-		margin-bottom: 50px;
-		
-		.title-div {
-			grid-area: title-div;
+    -ms-grid-rows: auto 50px auto;
+    grid-template-areas:
+      '...   ...    title-div  ...   ...'
+      '...  select  select   select  ...';
+    row-gap: 50px;
+    margin-bottom: 50px;
 
-			h2 { margin-top: 0}
-			p { margin-bottom: 0}
-		}
-		
-		// Feature Navigators
-		.select {
-			grid-area: select;
+    .title-div {
+      grid-area: title-div;
 
-			display: -webkit-box;
+      h2 {
+        margin-top: 0;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
 
-			display: -ms-flexbox;
+    // Feature Navigators
+    .select {
+      grid-area: select;
 
-			display: flex;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			    -ms-flex-flow: row nowrap;
-			        flex-flow: row nowrap;
-			-webkit-box-pack: justify;
-			    -ms-flex-pack: justify;
-			        justify-content: space-between;
+      display: -webkit-box;
 
-			option {
-				color: rgb(145, 148, 161);
-				padding: 5px 15px;
-				cursor: pointer;
+      display: -ms-flexbox;
 
-				&.active {
-					color: white;
-					&:hover {
-						color: white !important;
-					}
-				}
-			}
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
 
-			position: relative;
-			.highlight-active-option {
-				z-index: -1;
-				position: absolute; 
-				top: 0; left: 0;
-				height: 100%; width: 201px;
+      option {
+        color: rgb(145, 148, 161);
+        padding: 5px 15px;
+        cursor: pointer;
 
-				-webkit-transition: all .2s ease-in-out;
-				-o-transition: all .2s ease-in-out;
-				transition: all .2s ease-in-out;
-				
-				border-radius: 25px;
-				background: hsl(231, 69%, 60%);
-			}
-		}
-	}
+        &.active {
+          color: white;
+          &:hover {
+            color: white !important;
+          }
+        }
+      }
 
+      position: relative;
+      .highlight-active-option {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 201px;
 
-	.feature1, .feature2, .feature3 {
-		display: none;
-		
-		&.show-feature {
-			display: initial !important;
-		}
+        -webkit-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
 
-		.text-wrapper {
-			text-align: left;
-			margin-right: 50px;
-			padding: 30px 0;
+        border-radius: 25px;
+        background: hsl(231, 69%, 60%);
+      }
+    }
+  }
 
-			.cta {
-				@include cta-box(hsl(231, 69%, 60%));
-				margin: 25px 0  0 10px;
-				padding: 15px 20px !important;
-				color: white;
-			}
-		}
+  .feature1,
+  .feature2,
+  .feature3 {
+    display: none;
 
-		.img-wrapper {
-			float: left;
-			margin-right: 100px;
+    &.active {
+      display: initial !important;
+    }
 
-			.feature-img {
-				margin-left: 10vw;
-			}
+    .text-wrapper {
+      text-align: left;
+      margin-right: 50px;
+      padding: 30px 0;
 
-			position: relative;
+      .cta {
+        @include cta-box(hsl(231, 69%, 60%));
+        margin: 25px 0 0 10px;
+        padding: 15px 20px !important;
+        color: white;
+      }
+    }
 
-			&::after {
-				content: "";
-				position: absolute;
-				width: 70%; height: 80%;
-				top: 30%; left: 0;
+    .img-wrapper {
+      float: left;
+      margin-right: 100px;
 
-				background: hsl(231, 69%, 60%);
-				border-radius: 0 0 50% 0;
-				z-index: -1;
-			}
-		}
-	}
+      .feature-img {
+        margin-left: 10vw;
+      }
 
-	.feature1 .img-wrapper::after {
-		height: 90%;
-	}
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 80%;
+        top: 30%;
+        left: 0;
+
+        background: hsl(231, 69%, 60%);
+        border-radius: 0 0 50% 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  .feature1 .img-wrapper::after {
+    height: 90%;
+  }
 }
