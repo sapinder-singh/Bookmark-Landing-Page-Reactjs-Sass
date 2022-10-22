@@ -5,16 +5,7 @@ import HamburgerIcon from '../../images/icon-hamburger.svg';
 import CloseIcon from '../../images/icon-close.svg';
 
 export default function Header() {
-  const [menuIcon, setIcon] = useState(HamburgerIcon);
-
-  const revealMenu = () => {
-    document
-      .querySelector('.header .navigation')
-      .classList.toggle('reveal-menu');
-
-    if (menuIcon === HamburgerIcon) setIcon(CloseIcon);
-    else setIcon(HamburgerIcon);
-  };
+  const [isHidden, setIsHidden] = useState(true);
 
   return (
     <header className="header">
@@ -23,7 +14,7 @@ export default function Header() {
           <LogoBookmark className="logo" alt="logo-bookmark" />
         </a>
 
-        <nav className="navigation">
+        <nav className={`navigation ${isHidden ? 'hide' : ''}`}>
           <a className="navlink" href="./">
             Features
           </a>
@@ -40,8 +31,8 @@ export default function Header() {
 
         <img
           className="menu-icon"
-          src={menuIcon}
-          onClick={revealMenu}
+          src={isHidden ? HamburgerIcon : CloseIcon}
+          onClick={() => setIsHidden(prev => !prev)}
           alt="menu"
         />
       </div>

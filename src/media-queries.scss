@@ -75,18 +75,18 @@
         background: rgba(83, 104, 223, 0.6);
         border-radius: 5px;
 
-        -webkit-clip-path: circle(0 at 100% 0);
-        clip-path: circle(0 at 100% 0);
+        clip-path: circle(100%);
+        -webkit-clip-path: circle(100%);
+
         -webkit-transition: -webkit-clip-path 0.5s;
         transition: -webkit-clip-path 0.5s;
-
         -o-transition: clip-path 0.5s;
         transition: clip-path 0.5s;
         transition: clip-path 0.5s, -webkit-clip-path 0.5s;
 
-        &.reveal-menu {
-          -webkit-clip-path: circle(100%);
-          clip-path: circle(100%);
+        &.hide {
+          clip-path: circle(0 at 100% 0);
+          -webkit-clip-path: circle(0 at 100% 0);
         }
         .navlink {
           color: white;
