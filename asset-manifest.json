@@ -1,37 +1,31 @@
 {
   "files": {
-    "main.css": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.67dfe865.chunk.css",
-    "main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.b796b463.chunk.js",
-    "main.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.b796b463.chunk.js.map",
-    "runtime-main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/runtime-main.6b172663.js",
-    "runtime-main.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/runtime-main.6b172663.js.map",
-    "static/js/2.b9bd4f38.chunk.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.b9bd4f38.chunk.js",
-    "static/js/2.b9bd4f38.chunk.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.b9bd4f38.chunk.js.map",
+    "main.css": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.f103727e.chunk.css",
+    "main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.98b7f8b8.chunk.js",
+    "main.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.98b7f8b8.chunk.js.map",
+    "runtime-main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/runtime-main.daaf99a4.js",
+    "runtime-main.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/runtime-main.daaf99a4.js.map",
+    "static/js/2.50db265f.chunk.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.50db265f.chunk.js",
+    "static/js/2.50db265f.chunk.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.50db265f.chunk.js.map",
     "index.html": "/Bookmark-Landing-Page-Reactjs-Sass/index.html",
-    "precache-manifest.6bfc01e0bea8e8ffb72661d364b70d3f.js": "/Bookmark-Landing-Page-Reactjs-Sass/precache-manifest.6bfc01e0bea8e8ffb72661d364b70d3f.js",
+    "precache-manifest.c3988cbeb9e3dac0b2dda42cd708608f.js": "/Bookmark-Landing-Page-Reactjs-Sass/precache-manifest.c3988cbeb9e3dac0b2dda42cd708608f.js",
     "service-worker.js": "/Bookmark-Landing-Page-Reactjs-Sass/service-worker.js",
-    "static/css/main.67dfe865.chunk.css.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.67dfe865.chunk.css.map",
-    "static/js/2.b9bd4f38.chunk.js.LICENSE.txt": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.b9bd4f38.chunk.js.LICENSE.txt",
+    "static/css/main.f103727e.chunk.css.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.f103727e.chunk.css.map",
+    "static/js/2.50db265f.chunk.js.LICENSE.txt": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.50db265f.chunk.js.LICENSE.txt",
     "static/media/bg-dots.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/bg-dots.7c66c472.svg",
     "static/media/icon-arrow.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-arrow.38993f94.svg",
     "static/media/icon-close.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-close.3f810892.svg",
-    "static/media/Join-section.scss": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-error.ba45f678.svg",
+    "static/media/index.scss": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-error.ba45f678.svg",
     "static/media/icon-facebook.c24c1904.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-facebook.c24c1904.svg",
     "static/media/icon-hamburger.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-hamburger.e3defca1.svg",
     "static/media/icon-twitter.a4daae10.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-twitter.a4daae10.svg",
-    "static/media/illustration-features-tab-1.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/illustration-features-tab-1.25a23733.svg",
-    "static/media/illustration-features-tab-2.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/illustration-features-tab-2.11b0ec33.svg",
-    "static/media/illustration-features-tab-3.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/illustration-features-tab-3.7f696303.svg",
     "static/media/illustration-hero.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/illustration-hero.dfa0cd82.svg",
-    "static/media/logo-bookmark.618f33f9.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/logo-bookmark.618f33f9.svg",
-    "static/media/logo-chrome.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/logo-chrome.3e1ab00b.svg",
-    "static/media/logo-firefox.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/logo-firefox.e5023c2b.svg",
-    "static/media/logo-opera.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/logo-opera.3d8f7bcc.svg"
+    "static/media/logo-bookmark.618f33f9.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/logo-bookmark.618f33f9.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6b172663.js",
-    "static/js/2.b9bd4f38.chunk.js",
-    "static/css/main.67dfe865.chunk.css",
-    "static/js/main.b796b463.chunk.js"
+    "static/js/runtime-main.daaf99a4.js",
+    "static/js/2.50db265f.chunk.js",
+    "static/css/main.f103727e.chunk.css",
+    "static/js/main.98b7f8b8.chunk.js"
   ]
 }

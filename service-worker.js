@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Bookmark-Landing-Page-Reactjs-Sass/precache-manifest.6bfc01e0bea8e8ffb72661d364b70d3f.js"
+  "/Bookmark-Landing-Page-Reactjs-Sass/precache-manifest.c3988cbeb9e3dac0b2dda42cd708608f.js"
 );
 
 self.addEventListener('message', (event) => {
