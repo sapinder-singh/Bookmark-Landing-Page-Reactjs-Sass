@@ -1,7 +1,37 @@
-@import './media-queries.scss';
+@use './variables';
 
 :root {
   font-size: 18px;
+
+  @media (max-width: variables.$breakpoint-1) {
+    text-align: center;
+  }
+
+  @media (max-width: variables.$breakpoint-2) {
+    .download-section .title-div,
+    .faqs {
+      margin-left: 15vw;
+      margin-right: 15vw;
+    }
+  }
+
+  @media (max-width: variables.$breakpoint-4) {
+    font-size: 17px;
+
+    .intro-section .text-wrapper,
+    .features-section .text-wrapper,
+    .download-section .title-div,
+    .faqs {
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+    .intro-section,
+    .features-section [class^='feature'] {
+      .img-wrapper [class$='-img'] {
+        width: 80%;
+      }
+    }
+  }
 }
 
 body {

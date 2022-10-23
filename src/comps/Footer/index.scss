@@ -1,63 +1,95 @@
-footer {
-	padding: 50px 10vw;
+@use '../../variables';
 
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+.footer {
+  padding: 50px 10vw;
 
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 
-	    -ms-flex-flow: row wrap;
-					flex-flow: row wrap;
-					
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-					align-items: center;
-					
-	background: hsl(229, 31%, 21%);
-	
-	.navigation {
-		-webkit-box-flex: .2;
-		    -ms-flex: .2 0 500px;
-		        flex: .2 0 500px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 
-		-ms-flex-pack: distribute;
-				justify-content: space-around;
-				
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 
-		.brand .logo .text {
-			fill: white;
-		}
-		.navlink {
-			color: rgba(255,255,255,.6);
-			text-transform: uppercase;
-			letter-spacing: 1px;
-		}
-	}
-	.social-links {
-		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 auto;
-		        flex: 0 0 auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 
-		a {
-			margin: auto 10px;
-			
-			&:hover svg path {
-				-webkit-transition: all .2s;
-				-o-transition: all .2s;
-				transition: all .2s;
-				fill: rgba(250, 87, 87, .8);
-			}
-		}
-	}
+  background: hsl(229, 31%, 21%);
+
+  @media (max-width: variables.$breakpoint-3) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 5% 0 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .navigation {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .navigation .navlink,
+    .social-links {
+      margin: 20px auto;
+    }
+  }
+}
+
+.footer .navigation {
+  -webkit-box-flex: 0.2;
+  -ms-flex: 0.2 0 500px;
+  flex: 0.2 0 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .brand .logo .text {
+    fill: white;
+  }
+  .navlink {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.footer .social-links {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+
+  .anchor {
+    margin: auto 10px;
+
+    &:hover svg path {
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      fill: rgba(250, 87, 87, 0.8);
+    }
+  }
 }

@@ -1,3 +1,4 @@
+@use '../../variables';
 @import '../../mixins.scss';
 
 .header {
@@ -6,7 +7,8 @@
   z-index: 1;
   background: white;
 }
-.header .header-inner-wrapper {
+
+.header-inner-wrapper {
   box-sizing: border-box;
   width: 100vw;
   padding: 50px 10vw 0;
@@ -25,33 +27,84 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
 
-  .logo {
-    margin: auto 0;
+.header-inner-wrapper .logo {
+  margin: auto 0;
+}
+
+.header-inner-wrapper .menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.header-inner-wrapper .navigation {
+  flex: 0.1 0 450px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  justify-content: space-between;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .navlink {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &.login {
+      @include cta-box(#fa5757, white);
+    }
   }
-  .menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  .navigation {
-    flex: 0.1 0 450px;
+}
 
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media (max-width: variables.$breakpoint-3) {
+  .header-inner-wrapper {
+    position: relative;
 
-    justify-content: space-between;
+    .menu-icon {
+      display: initial;
+    }
+    .navigation {
+      position: absolute;
+      top: 110%;
+      right: 10vw;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
 
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
 
-    .navlink {
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
 
-      &.login {
-        @include cta-box(#fa5757, white);
+      z-index: 2;
+      background: rgba(83, 104, 223, 0.6);
+      border-radius: 5px;
+
+      clip-path: circle(100%);
+      -webkit-clip-path: circle(100%);
+
+      -webkit-transition: -webkit-clip-path 0.5s;
+      transition: -webkit-clip-path 0.5s;
+      -o-transition: clip-path 0.5s;
+      transition: clip-path 0.5s;
+      transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+
+      &.hide {
+        clip-path: circle(0 at 100% 0);
+        -webkit-clip-path: circle(0 at 100% 0);
+      }
+      .navlink {
+        color: white;
+        margin: 10px;
       }
     }
   }

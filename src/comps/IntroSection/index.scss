@@ -1,59 +1,69 @@
+@use '../../variables';
 @import '../../mixins.scss';
 @import '../../animations.scss';
 
 .intro-section {
   margin-top: 125px;
+}
 
-  .text-wrapper {
-    margin-left: 10vw;
-    padding: 50px 0;
+.intro-section .text-wrapper {
+  padding: 50px 0;
+  margin-left: 10vw;
 
-    .download-links {
-      white-space: nowrap;
-
-      .cta {
-        margin: 25px 10px 0 0;
-        padding: 15px 20px !important;
-
-        &:first-of-type {
-          @include cta-box(hsl(231, 69%, 60%), white);
-        }
-        &:last-of-type {
-          @include cta-box(white);
-        }
-      }
-    }
+  @media (max-width: variables.$breakpoint-1) {
+    margin: 0 15vw;
   }
 
-  .img-wrapper {
-    float: right;
-    position: relative;
-    --img-cubic-bezier: cubic-bezier(0.08, 0.53, 0.21, 1);
-    --after-cubiz-bezier: cubic-bezier(0.08, 0.53, 0.41, 1.26);
+  .download-links {
+    white-space: nowrap;
+  }
 
-    .intro-img {
-      transform: scale(0, 0);
-      transform-origin: bottom right;
-      animation: pop-in-from-bottom-right 0.5s 0.8s var(--img-cubic-bezier)
-        forwards;
+  .download-links .cta {
+    margin: 25px 10px 0 0;
+    padding: 15px 20px !important;
+
+    &:first-of-type {
+      @include cta-box(hsl(231, 69%, 60%), white);
     }
+    &:last-of-type {
+      @include cta-box(white);
+    }
+  }
+}
 
+.intro-section .img-wrapper {
+  float: right;
+  position: relative;
+  $img-cubic-bezier: cubic-bezier(0.08, 0.53, 0.21, 1);
+  $after-cubiz-bezier: cubic-bezier(0.08, 0.53, 0.41, 1.26);
+
+  .intro-img {
+    transform: scale(0, 0);
+    transform-origin: bottom right;
+    animation: pop-in-from-bottom-right 0.5s 0.8s $img-cubic-bezier forwards;
+  }
+
+  &::after {
+    content: '';
+    background: hsl(231, 69%, 60%);
+    width: 80%;
+    height: 70%;
+
+    position: absolute;
+    top: 30%;
+    right: 0;
+    border-radius: 0 0 0 50%;
+    z-index: -1;
+
+    transform: scale(0, 1);
+    transform-origin: right;
+    animation: pop-in-from-bottom-right 0.5s 0.3s $after-cubiz-bezier forwards;
+  }
+
+  @media (max-width: variables.$breakpoint-1) {
+    float: none;
     &::after {
-      content: '';
-      background: hsl(231, 69%, 60%);
-      width: 80%;
-      height: 70%;
-
-      position: absolute;
-      top: 30%;
-      right: 0;
-      border-radius: 0 0 0 50%;
-      z-index: -1;
-
-      transform: scale(0, 1);
-      transform-origin: right;
-      animation: pop-in-from-bottom-right 0.5s 0.3s var(--after-cubiz-bezier)
-        forwards;
+      width: 60%;
     }
   }
 }

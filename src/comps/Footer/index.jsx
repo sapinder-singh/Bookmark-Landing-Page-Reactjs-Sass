@@ -6,7 +6,7 @@ import { ReactComponent as IconTwtr } from '../../images/icon-twitter.svg';
 
 export default function Footer() {
   return (
-    <footer>
+    <footer class="footer">
       <div className="navigation">
         <a className="brand" href="./">
           <LogoBookmark className="logo" alt="logo-bookmark" />
@@ -23,10 +23,10 @@ export default function Footer() {
       </div>
 
       <div className="social-links">
-        <a href="./">
+        <a className="anchor" href="./">
           <IconFB className="icon-fb" alt="icon-fb" />
         </a>
-        <a href="./">
+        <a className="anchor" href="./">
           <IconTwtr className="icon-twtr" alt="icon-twtr" />
         </a>
       </div>
