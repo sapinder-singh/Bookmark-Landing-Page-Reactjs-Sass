@@ -1,31 +1,22 @@
 {
   "files": {
-    "main.css": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.f103727e.chunk.css",
-    "main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.98b7f8b8.chunk.js",
-    "main.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.98b7f8b8.chunk.js.map",
-    "runtime-main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/runtime-main.daaf99a4.js",
-    "runtime-main.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/runtime-main.daaf99a4.js.map",
-    "static/js/2.50db265f.chunk.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.50db265f.chunk.js",
-    "static/js/2.50db265f.chunk.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.50db265f.chunk.js.map",
+    "main.css": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.59d5ed46.css",
+    "main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.d2b074ad.js",
+    "static/media/illustration-hero.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/illustration-hero.07801d05cb11930f0c826add8c05ce22.svg",
+    "static/media/logo-bookmark.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/logo-bookmark.0ecf7e729aabd1ec7889153555f7eaf6.svg",
+    "static/media/bg-dots.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/bg-dots.90f0b46cec8b5f7cfd12393cb5f391a7.svg",
     "index.html": "/Bookmark-Landing-Page-Reactjs-Sass/index.html",
-    "precache-manifest.c3988cbeb9e3dac0b2dda42cd708608f.js": "/Bookmark-Landing-Page-Reactjs-Sass/precache-manifest.c3988cbeb9e3dac0b2dda42cd708608f.js",
-    "service-worker.js": "/Bookmark-Landing-Page-Reactjs-Sass/service-worker.js",
-    "static/css/main.f103727e.chunk.css.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.f103727e.chunk.css.map",
-    "static/js/2.50db265f.chunk.js.LICENSE.txt": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/2.50db265f.chunk.js.LICENSE.txt",
-    "static/media/bg-dots.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/bg-dots.7c66c472.svg",
-    "static/media/icon-arrow.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-arrow.38993f94.svg",
-    "static/media/icon-close.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-close.3f810892.svg",
-    "static/media/index.scss": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-error.ba45f678.svg",
-    "static/media/icon-facebook.c24c1904.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-facebook.c24c1904.svg",
-    "static/media/icon-hamburger.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-hamburger.e3defca1.svg",
-    "static/media/icon-twitter.a4daae10.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-twitter.a4daae10.svg",
-    "static/media/illustration-hero.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/illustration-hero.dfa0cd82.svg",
-    "static/media/logo-bookmark.618f33f9.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/logo-bookmark.618f33f9.svg"
+    "static/media/icon-twitter.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-twitter.dde79e7edd3892319de2ee22ea7ca39d.svg",
+    "static/media/icon-facebook.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-facebook.8b45ba94b5f75f0d38a9bbcc11df55c2.svg",
+    "static/media/icon-error.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-error.a46cc66573dea1a15acb.svg",
+    "static/media/icon-close.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-close.0188d73cdf017561312f7fbe7938c7e6.svg",
+    "static/media/icon-hamburger.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-hamburger.4385fd507d24f37ccbb3ae359b5c9555.svg",
+    "static/media/icon-arrow.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-arrow.8174203a5d4fc44f5247b825de6e2158.svg",
+    "main.59d5ed46.css.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.59d5ed46.css.map",
+    "main.d2b074ad.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.d2b074ad.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.daaf99a4.js",
-    "static/js/2.50db265f.chunk.js",
-    "static/css/main.f103727e.chunk.css",
-    "static/js/main.98b7f8b8.chunk.js"
+    "static/css/main.59d5ed46.css",
+    "static/js/main.d2b074ad.js"
   ]
 }
