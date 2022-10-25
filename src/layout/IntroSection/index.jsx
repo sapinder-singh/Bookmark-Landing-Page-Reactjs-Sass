@@ -4,7 +4,7 @@ import IntroImg from '../../images/illustration-hero.svg';
 
 export default function IntroSection() {
   return (
-    <section className="intro-section">
+    <section id="intro" className="intro-section">
       <div className="img-wrapper">
         <img className="intro-img" src={IntroImg} alt="img-illustration" />
       </div>

@@ -6,18 +6,18 @@ import { ReactComponent as IconTwtr } from '../../images/icon-twitter.svg';
 
 export default function Footer() {
   return (
-    <footer class="footer">
+    <footer className="footer">
       <div className="navigation">
         <a className="brand" href="./">
           <LogoBookmark className="logo" alt="logo-bookmark" />
         </a>
-        <a className="navlink" href="/">
+        <a className="navlink" href="#features">
           Features
         </a>
-        <a className="navlink" href="/">
-          Pricing
+        <a className="navlink" href="#download-section">
+          Download
         </a>
-        <a className="navlink" href="/">
+        <a className="navlink" href="#contact">
           Contact
         </a>
       </div>
@@ -30,6 +30,10 @@ export default function Footer() {
           <IconTwtr className="icon-twtr" alt="icon-twtr" />
         </a>
       </div>
+      {/* <p class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+				Coded by <a href="#">Your Name Here</a>.
+    	</p> */}
     </footer>
   );
 }

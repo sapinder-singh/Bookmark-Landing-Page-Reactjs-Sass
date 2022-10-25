@@ -96,9 +96,9 @@
     height: 100%;
     width: 201px;
 
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.5s variables.$ease-out;
+    -o-transition: all 0.5s variables.$ease-out;
+    transition: all 0.5s variables.$ease-out;
 
     border-radius: 25px;
     background: hsl(231, 69%, 60%);

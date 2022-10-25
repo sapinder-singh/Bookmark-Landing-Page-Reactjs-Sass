@@ -4,7 +4,7 @@ import { CardsData, Card } from './Card.jsx';
 
 export default function DownloadSection() {
   return (
-    <section className="download-section">
+    <section id="download-section" className="download-section">
       <div className="title-div">
         <h2 className="title">Download the extension</h2>
         <p className="summary">

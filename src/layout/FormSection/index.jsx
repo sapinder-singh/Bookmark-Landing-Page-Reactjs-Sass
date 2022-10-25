@@ -3,7 +3,7 @@ import './index.scss';
 
 export default function FormSection() {
   return (
-    <section className="form-section">
+    <section id="form-section" className="form-section">
       <small>35,000+ already joined</small>
 
       <h2>Stay up-to-date with what we're doing</h2>

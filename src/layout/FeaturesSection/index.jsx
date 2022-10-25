@@ -31,7 +31,7 @@ export default function FeaturesSection() {
   }, [optionsState]);
 
   return (
-    <section className="features-section">
+    <section id="features" className="features-section">
       <div className="main-text-wrapper">
         <div className="title-div">
           <h2 className="title">Features</h2>

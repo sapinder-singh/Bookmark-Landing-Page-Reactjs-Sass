@@ -3,7 +3,7 @@
 @import '../../animations.scss';
 
 .intro-section {
-  margin-top: 125px;
+  margin-top: variables.$page-margin-top;
 }
 
 .intro-section .text-wrapper {
@@ -34,13 +34,12 @@
 .intro-section .img-wrapper {
   float: right;
   position: relative;
-  $img-cubic-bezier: cubic-bezier(0.08, 0.53, 0.21, 1);
   $after-cubiz-bezier: cubic-bezier(0.08, 0.53, 0.41, 1.26);
 
   .intro-img {
     transform: scale(0, 0);
     transform-origin: bottom right;
-    animation: pop-in-from-bottom-right 0.5s 0.8s $img-cubic-bezier forwards;
+    animation: pop-in-from-bottom-right 0.5s 0.8s variables.$ease-out forwards;
   }
 
   &::after {

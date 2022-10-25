@@ -15,16 +15,16 @@ export default function Header() {
         </a>
 
         <nav className={`navigation ${isHidden ? 'hide' : ''}`}>
-          <a className="navlink" href="./">
+          <a className="navlink" href="#features">
             Features
           </a>
-          <a className="navlink" href="./">
-            Pricing
+          <a className="navlink" href="#download-section">
+            Download
           </a>
-          <a className="navlink" href="./">
+          <a className="navlink" href="#contact">
             Contact
           </a>
-          <a className="navlink login" href="./">
+          <a className="navlink login" href="#form-section">
             Login
           </a>
         </nav>

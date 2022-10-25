@@ -2,6 +2,8 @@
 
 :root {
   font-size: 18px;
+  scroll-behavior: smooth;
+  scroll-padding-top: variables.$page-margin-top;
 
   @media (max-width: variables.$breakpoint-1) {
     text-align: center;
