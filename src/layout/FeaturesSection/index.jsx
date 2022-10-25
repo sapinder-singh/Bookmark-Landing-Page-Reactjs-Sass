@@ -42,29 +42,29 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        <div className="select">
+        <ul className="select">
           <div className="highlight-active-option" />
-          <option
+          <li
             className={`option ${optionsState[0]}`}
             value="0"
             onClick={handleClick}>
             Simple Bookmarking
-          </option>
+          </li>
 
-          <option
+          <li
             className={`option ${optionsState[1]}`}
             value="1"
             onClick={handleClick}>
             Speedy Searching
-          </option>
+          </li>
 
-          <option
+          <li
             className={`option ${optionsState[2]}`}
             value="2"
             onClick={handleClick}>
             Easy Sharing
-          </option>
-        </div>
+          </li>
+        </ul>
       </div>
 
       {/* FeatureItems */}
