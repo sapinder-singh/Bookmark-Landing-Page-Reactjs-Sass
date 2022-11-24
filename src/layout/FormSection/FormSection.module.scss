@@ -1,0 +1,69 @@
+@use '../../variables';
+@import '../../mixins.scss';
+
+.section {
+  padding-block: variables.$section-margin-block;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+
+  background: rgb(83, 104, 223);
+  color: white;
+
+  .small {
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+  }
+}
+
+.form {
+  margin-top: variables.$margin-lg;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: variables.$margin-md;
+
+  @media all and (max-width: variables.$bp-mobile-sm) {
+    .input-wrapper,
+    .email {
+      width: 100%;
+    }
+  }
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.email {
+  padding: variables.$padding-block-md variables.$padding-inline-sm;
+  width: 13rem;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: variables.$border-radius-sm;
+  box-shadow: variables.$box-shadow;
+
+  &:not(:placeholder-shown):focus-visible:invalid {
+    transition: none;
+    background: white url('../../images/icon-error.svg') right
+      variables.$padding-inline-sm center no-repeat;
+  }
+  &:not(:placeholder-shown):focus-visible:invalid + .error-message {
+    display: initial;
+  }
+}
+
+.error-message {
+  display: none;
+  position: absolute;
+  top: calc(100% + variables.$margin-sm / 2);
+  left: 0;
+  right: 0;
+
+  padding: variables.$padding-block-sm variables.$padding-inline-sm;
+  font-size: 0.6em;
+  background: rgba(variables.$color-red, 0.8);
+  border-radius: variables.$border-radius-sm;
+}

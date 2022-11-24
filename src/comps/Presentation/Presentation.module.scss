@@ -1,0 +1,43 @@
+@use '../../variables';
+
+.main-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  row-gap: calc(variables.$section-margin-block * 1.5);
+  align-items: flex-start;
+
+  .side-text-wrapper {
+    flex: 1 0 40%;
+  }
+  h3.title {
+    font-size: variables.$fs-2;
+  }
+
+  @media all and (max-width: variables.$bp-tab-lg) {
+    flex-direction: column;
+    align-items: stretch;
+
+    [class^='IntroSection'] & {
+      flex-direction: column-reverse;
+    }
+
+    h1.title {
+      white-space: normal;
+    }
+  }
+}
+
+.side-text-wrapper {
+  > *:not(:last-child) {
+    margin-block: variables.$margin-md;
+  }
+  .CTAs-wrapper {
+    margin-top: variables.$margin-lg;
+    display: flex;
+    flex-flow: row wrap;
+    gap: variables.$margin-sm;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

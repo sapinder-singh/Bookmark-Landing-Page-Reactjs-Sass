@@ -1,6 +1,39 @@
-$breakpoint-1: 1100px;
-$breakpoint-2: 1015px;
-$breakpoint-3: 825px;
-$breakpoint-4: 650px;
-$page-margin-top: 125px;
+$fs-1: 2.5rem;
+$fs-2: 1.9rem;
+$fs-3: 1.4rem;
+$fs-4: 1rem;
+$fs-5: 0.7rem;
+
+$bp-desktop-sm: 1400px;
+$bp-tab-lg: 1160px;
+$bp-tab-md: 1015px;
+$bp-tab-sm: 850px;
+$bp-mobile-lg: 650px;
+$bp-mobile-sm: 400px;
+
+$section-margin-block: 5.556rem;
+$page-margin-top: calc($section-margin-block * 1.75);
+$margin-sm: 1.111rem;
+$margin-md: 1.667rem;
+$margin-lg: calc($margin-md * 2);
+
+$padding-block-sm: 0.556rem;
+$padding-block-md: 0.833rem;
+$padding-block-lg: 1.111rem;
+$padding-inline-md: 1.667rem;
+$padding-inline-sm: 1.111rem;
+$main-padding-inline: 10vw;
+$main-padding-inline-mobile: 5vw;
+
+$color-text-p: hsl(229deg, 8%, 40%);
+$color-text-dark: rgba(0, 0, 0, 0.8);
+$color-text-cta: rgba(0, 0, 0, 0.6);
+$color-blue: hsl(231deg, 69%, 60%);
+$color-blue-dark: hsl(229deg, 31%, 21%);
+$color-red: hsl(0deg, 94%, 66%);
+
+$border-radius-sm: 0.278rem;
+$box-shadow: rgba(0, 0, 0, 0.239) 0 0.111rem 0.556rem;
+$box-shadow-light: rgba(0, 0, 0, 0.1) 0 0.833rem 1.111rem;
+
 $ease-out: cubic-bezier(0.08, 0.53, 0.21, 1);

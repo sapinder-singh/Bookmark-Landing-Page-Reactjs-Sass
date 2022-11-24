@@ -1,0 +1,76 @@
+@use '../../../variables';
+@use '../../../mixins';
+@import '../../../animations.scss';
+
+.wrapper {
+  $after-cubiz-bezier: cubic-bezier(0.08, 0.53, 0.41, 1.26);
+  flex: 1 0 50%;
+  position: relative;
+  height: min-content;
+
+  &.float-right {
+    @include mixins.position-illustration(
+      right,
+      variables.$main-padding-inline
+    );
+  }
+  &.float-left {
+    @include mixins.position-illustration(left, variables.$main-padding-inline);
+  }
+
+  @media all and (max-width: variables.$bp-tab-lg) and (min-width: variables.$bp-tab-sm) {
+    width: 70vw;
+
+    &.float-right {
+      align-self: flex-end;
+    }
+    &.float-left {
+      align-self: flex-start;
+    }
+  }
+
+  @media all and (max-width: variables.$bp-mobile-lg) {
+    &.float-right {
+      right: calc(-1 * variables.$main-padding-inline-mobile);
+    }
+    &.float-left {
+      left: calc(-1 * variables.$main-padding-inline-mobile);
+    }
+  }
+
+  &::after {
+    content: '';
+    background: hsl(231, 69%, 60%);
+    width: 80%;
+    height: 70%;
+
+    position: absolute;
+    bottom: -20%;
+    right: 0;
+    border-radius: 0 0 0 50%;
+    z-index: -1;
+
+    transform: scale(0, 1);
+    transform-origin: right;
+    animation: scale1 0.5s 0.3s $after-cubiz-bezier forwards;
+  }
+
+  .illustration {
+    width: 100%;
+    filter: drop-shadow(variables.$box-shadow-light);
+    transform: scale(0, 0);
+    transform-origin: bottom right;
+    animation: scale1 0.5s 0.8s variables.$ease-out forwards;
+  }
+
+  &.float-left::after {
+    right: revert;
+    left: 0;
+    border-radius: 0 0 50% 0;
+    transform-origin: left;
+  }
+
+  &.float-left .illustration {
+    transform-origin: bottom left;
+  }
+}

@@ -1,0 +1,56 @@
+@use '../../variables';
+@import '../../animations.scss';
+
+.section {
+  margin-block: variables.$section-margin-block;
+}
+.select {
+  margin: variables.$margin-lg auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+.faq-item {
+  margin-block: variables.$margin-sm;
+  padding: variables.$padding-block-sm variables.$padding-inline-sm;
+  border-bottom: 1px solid rgb(145, 148, 161, 50%);
+
+  transition-property: transform, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: variables.$ease-out;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: variables.$box-shadow-light;
+    border-radius: variables.$border-radius-sm;
+  }
+}
+
+.label {
+  cursor: pointer;
+  padding-bottom: variables.$padding-block-sm;
+  font-weight: 500;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-dropdown {
+  margin-left: variables.$margin-sm;
+}
+
+.checkbox,
+.small {
+  display: none;
+}
+.small {
+  color: variables.$color-text-p;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.checkbox:checked + .small {
+  display: block;
+  animation: scale1 0.3s variables.$ease-out forwards;
+}

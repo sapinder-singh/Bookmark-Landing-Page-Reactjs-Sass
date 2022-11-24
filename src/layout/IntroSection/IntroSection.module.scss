@@ -1,0 +1,6 @@
+@use '../../variables';
+
+.section {
+  margin-block: variables.$page-margin-top
+    calc(variables.$section-margin-block * 1.5);
+}

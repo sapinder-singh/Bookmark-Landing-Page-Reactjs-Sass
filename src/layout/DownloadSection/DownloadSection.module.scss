@@ -1,0 +1,49 @@
+@use '../../variables';
+@import '../../mixins.scss';
+
+.section {
+  margin-block: variables.$section-margin-block;
+}
+.cards {
+  $preferred-card-width: 16.667rem;
+
+  margin-top: calc(variables.$section-margin-block / 2);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min($preferred-card-width, 80%));
+  gap: min(variables.$margin-lg, 5vw);
+  grid-auto-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  @media all and (min-width: variables.$bp-desktop-sm) {
+    grid-template-columns: repeat(auto-fit, max($preferred-card-width, 28%));
+  }
+
+  .card {
+    width: 100%;
+    padding: variables.$padding-block-lg 0;
+    box-shadow: variables.$box-shadow-light;
+    border-radius: variables.$border-radius-sm;
+
+    .browser-logo {
+      width: max(100px, 5.556rem);
+      filter: drop-shadow(variables.$box-shadow);
+    }
+    .card-title {
+      margin: variables.$margin-sm variables.$margin-sm
+        calc(variables.$margin-sm * 0.5);
+    }
+    .card-subtitle {
+      color: rgb(145, 148, 161);
+      display: block;
+    }
+    .bg-dots {
+      margin: calc(variables.$margin-md * 1.5) 0 variables.$margin-md;
+      width: 100%;
+    }
+    [class*='Cta'] {
+      margin-inline: variables.$margin-sm;
+    }
+  }
+}

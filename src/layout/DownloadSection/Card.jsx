@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from './DownloadSection.module.scss';
+import Cta from '../../comps/Cta/Cta';
 import BgDots from '../../images/bg-dots.svg';
 
 export const CardsData = [
@@ -23,22 +25,22 @@ export function Card(props) {
   const browserName = props.name.toLowerCase();
 
   return (
-    <div className={props.id} key={props.id}>
+    <div className={styles.card} key={props.id}>
       <img
-        className="browser-logo"
+        className={styles['browser-logo']}
         src={`${process.env.PUBLIC_URL}/images/logo-${browserName}.svg`}
         alt={`logo-${browserName}`}
       />
 
-      <h3>Add to {props.name}</h3>
-      <small>Minimum version {props.version}</small>
+      <h3 className={styles['card-title']}>Add to {props.name}</h3>
+      <small className={styles['card-subtitle']}>
+        Minimum version {props.version}
+      </small>
 
       {/* BgDots */}
-      <img className="bg-dots" src={BgDots} alt="bg-dots" />
+      <img className={styles['bg-dots']} src={BgDots} alt="bg-dots" />
 
-      <a className="cta" href="./">
-        Add &amp; Install Extension
-      </a>
+      <Cta id={`download-${browserName}`}>Add &amp; Install Extension</Cta>
     </div>
   );
 }

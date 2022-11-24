@@ -1,0 +1,13 @@
+.logo-wrapper {
+  margin: auto 0;
+  .logo {
+    width: 8.222rem;
+    height: 1.389rem;
+  }
+  &--black .logo path[class*='text'] {
+    fill: black;
+  }
+  &--white .logo path[class*='text'] {
+    fill: white;
+  }
+}

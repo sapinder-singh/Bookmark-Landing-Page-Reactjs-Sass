@@ -2,36 +2,26 @@
 
 :root {
   font-size: 18px;
+  line-height: 1.5;
   scroll-behavior: smooth;
   scroll-padding-top: variables.$page-margin-top;
 
-  @media (max-width: variables.$breakpoint-1) {
-    text-align: center;
+  @media all and (min-width: variables.$bp-tab-lg) {
+    font-size: 1.27vw;
   }
 
-  @media (max-width: variables.$breakpoint-2) {
-    .download-section .title-div,
-    .faqs {
-      margin-left: 15vw;
-      margin-right: 15vw;
+  #root {
+    > section,
+    > footer {
+      padding-inline: variables.$main-padding-inline;
     }
   }
 
-  @media (max-width: variables.$breakpoint-4) {
-    font-size: 17px;
+  @media all and (max-width: variables.$bp-mobile-lg) {
+    font-size: 1.05rem;
 
-    .intro-section .text-wrapper,
-    .features-section .text-wrapper,
-    .download-section .title-div,
-    .faqs {
-      margin-left: 5vw;
-      margin-right: 5vw;
-    }
-    .intro-section,
-    .features-section [class^='feature'] {
-      .img-wrapper [class$='-img'] {
-        width: 80%;
-      }
+    #root > section {
+      padding-inline: variables.$main-padding-inline-mobile;
     }
   }
 }
@@ -40,7 +30,7 @@ body {
   margin: 0;
   font-family: 'Rubik', sans-serif;
   overflow-x: hidden;
-  color: rgba(0, 0, 0, 0.8);
+  color: variables.$color-text-dark;
 
   h1,
   h2,
@@ -48,35 +38,32 @@ body {
     font-weight: 500;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: variables.$fs-1;
   }
   h2 {
-    font-size: 1.9rem;
+    font-size: variables.$fs-2;
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: variables.$fs-3;
   }
 
   p {
-    font-size: 1rem;
-    color: rgb(145, 148, 161);
-    line-height: 1.5;
+    font-size: variables.$fs-4;
+    color: variables.$color-text-p;
+    line-height: 2;
+  }
+  a,
+  button,
+  input {
+    text-decoration: none;
+    font-weight: inherit;
+    font-size: variables.$fs-5;
   }
   a {
-    text-decoration: none;
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.8);
-
-    &:hover {
-      color: rgba(250, 87, 87, 0.8) !important;
-    }
+    color: inherit;
   }
 
   option {
-    font-size: 1rem;
-    &:hover {
-      color: rgba(219, 90, 90, 0.712) !important;
-    }
+    font-size: variables.$fs-4;
   }
 }

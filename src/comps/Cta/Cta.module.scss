@@ -1,0 +1,61 @@
+@use '../../variables';
+@use '../../mixins';
+
+.button {
+  display: inline-block;
+  font-weight: bold;
+
+  border: 0.056rem solid transparent;
+  border-radius: variables.$border-radius-sm;
+  box-shadow: variables.$box-shadow;
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+
+  &--bg-default,
+  &--bg-blue {
+    background-color: variables.$color-blue;
+    color: white;
+
+    $hover-bg-color: white;
+    $hover-text-color: variables.$color-blue;
+
+    @include mixins.cta-hover($hover-bg-color, $hover-text-color);
+  }
+
+  &--bg-white {
+    background-color: white;
+    color: variables.$color-text-cta;
+
+    $hover-bg-color: variables.$color-blue;
+    $hover-text-color: white;
+
+    @include mixins.cta-hover($hover-bg-color, $hover-text-color);
+  }
+
+  &--bg-red {
+    background-color: variables.$color-red;
+    color: white;
+
+    $hover-bg-color: white;
+    $hover-text-color: variables.$color-red;
+
+    @include mixins.cta-hover($hover-bg-color, $hover-text-color);
+  }
+
+  &--size-default,
+  &--size-default::before {
+    padding: variables.$padding-block-md variables.$padding-inline-sm;
+  }
+  &--size-narrow,
+  &--size-narrow::before {
+    padding: variables.$padding-block-sm variables.$padding-inline-md;
+  }
+
+  @media all and (max-width: variables.$bp-mobile-sm) {
+    &:not([class*='card'] .button) {
+      width: 100%;
+    }
+  }
+}

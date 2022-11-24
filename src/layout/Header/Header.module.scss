@@ -1,0 +1,97 @@
+@use '../../variables';
+@use '../../mixins';
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.header-inner-wrapper {
+  box-sizing: border-box;
+  width: 100vw;
+  padding: calc(variables.$section-margin-block / 2)
+    variables.$main-padding-inline 0;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  @include mixins.backdrop-blur;
+
+  @media all and (max-width: variables.$bp-mobile-lg) {
+    padding-inline: variables.$main-padding-inline-mobile;
+  }
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.navigation {
+  flex: 0.1 0 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navlink:not([class^='Cta'] .navlink) {
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+    font-weight: bold;
+
+    @include mixins.text-hover-bars;
+
+    @media all and (max-width: variables.$bp-tab-sm) {
+      margin-block: 0 variables.$margin-sm;
+      color: white;
+
+      @include mixins.text-hover-bars(white);
+    }
+  }
+}
+
+@media all and (max-width: variables.$bp-tab-sm) {
+  .menu-icon {
+    display: initial;
+  }
+  .navigation {
+    position: absolute;
+    top: 110%;
+    right: variables.$main-padding-inline;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: variables.$padding-block-lg variables.$padding-inline-sm;
+
+    z-index: 2;
+    @include mixins.backdrop-blur(rgba(83, 104, 223));
+
+    &,
+    &:before,
+    &:after {
+      border-radius: variables.$border-radius-sm;
+      box-shadow: variables.$box-shadow;
+    }
+
+    clip-path: circle(100%);
+    -webkit-clip-path: circle(100%);
+
+    transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+
+    &.hide {
+      clip-path: circle(0 at 100% 0);
+      -webkit-clip-path: circle(0 at 100% 0);
+    }
+  }
+}
+
+@media all and (max-width: variables.$bp-mobile-lg) {
+  .navigation {
+    right: variables.$main-padding-inline-mobile;
+  }
+}

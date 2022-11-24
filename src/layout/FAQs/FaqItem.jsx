@@ -1,5 +1,6 @@
 import React from 'react';
-import IconArrow from '../../images/icon-arrow.svg';
+import styles from './FAQs.module.scss';
+import IconDropdown from '../../images/icon-arrow.svg';
 
 export const FaqData = [
   {
@@ -35,15 +36,19 @@ export const FaqData = [
 export default function FaqItem(props, index) {
   const checkboxId = `checkbox${index + 1}`;
   return (
-    <React.Fragment key={props.quesId}>
-      <label htmlFor={checkboxId} className={props.quesId}>
+    <div key={props.quesId} className={styles['faq-item']}>
+      <label htmlFor={checkboxId} className={`${styles.label}`}>
         {props.question}
 
-        <img src={IconArrow} className="arrow-icon" alt="icon-dropdown" />
+        <img
+          src={IconDropdown}
+          className={styles['icon-dropdown']}
+          alt="icon-dropdown"
+        />
       </label>
-      <input type="checkbox" id={checkboxId} />
+      <input type="checkbox" id={checkboxId} className={styles.checkbox} />
 
-      <small className={`${props.ansId} show`}>{props.answer}</small>
-    </React.Fragment>
+      <small className={`${styles.small}`}>{props.answer}</small>
+    </div>
   );
 }

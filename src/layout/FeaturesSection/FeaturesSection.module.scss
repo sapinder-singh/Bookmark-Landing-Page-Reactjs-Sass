@@ -1,0 +1,66 @@
+@use '../../variables';
+@import '../../mixins.scss';
+
+.section {
+  margin-block: variables.$section-margin-block
+    calc(variables.$section-margin-block * 1.5);
+
+  @media (max-width: variables.$bp-tab-md) {
+    margin-bottom: variables.$section-margin-block;
+  }
+}
+
+// Feature Navigators
+.select {
+  padding: 0;
+  margin: variables.$margin-lg auto variables.$section-margin-block;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: variables.$margin-md;
+
+  @media (max-width: variables.$bp-tab-sm) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  position: relative;
+
+  list-style: none;
+}
+
+.option {
+  padding: variables.$padding-block-sm variables.$padding-inline-sm;
+  white-space: nowrap;
+  color: variables.$color-text-p;
+  cursor: pointer;
+
+  &.active-option {
+    color: white;
+    &:hover {
+      color: white !important;
+    }
+  }
+}
+
+.highlightable {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  transition: all 0.5s variables.$ease-out;
+
+  border-radius: variables.$border-radius-sm;
+  background: hsl(231, 69%, 60%);
+  box-shadow: variables.$box-shadow;
+}
+
+[class*='feature-item-'] {
+  display: none;
+
+  &.active-feature {
+    display: flex;
+  }
+}
