@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.59d5ed46.css",
-    "main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.d2b074ad.js",
-    "static/media/illustration-hero.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/illustration-hero.07801d05cb11930f0c826add8c05ce22.svg",
-    "static/media/logo-bookmark.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/logo-bookmark.0ecf7e729aabd1ec7889153555f7eaf6.svg",
+    "main.css": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.7e7d735e.css",
+    "main.js": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.f827c286.js",
+    "static/media/feature-item-3.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/feature-item-3.a4206aab7946773b29b702492d2d014b.svg",
+    "static/media/illustration-hero.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/illustration-hero.e99b143c8f8813b916574228843fad7c.svg",
+    "static/media/feature-item-2.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/feature-item-2.e933bd6d921c537d7743e08ea4ec488e.svg",
+    "static/media/logo-bookmark.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/logo-bookmark.a46bc60e8e65afc80d84b13ca45a5c67.svg",
+    "static/media/feature-item-1.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/feature-item-1.56ac8d968fe4493f1a475139541de976.svg",
     "static/media/bg-dots.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/bg-dots.90f0b46cec8b5f7cfd12393cb5f391a7.svg",
     "index.html": "/Bookmark-Landing-Page-Reactjs-Sass/index.html",
-    "static/media/icon-twitter.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-twitter.dde79e7edd3892319de2ee22ea7ca39d.svg",
-    "static/media/icon-facebook.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-facebook.8b45ba94b5f75f0d38a9bbcc11df55c2.svg",
-    "static/media/icon-error.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-error.a46cc66573dea1a15acb.svg",
+    "static/media/icon-twitter.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-twitter.17e5fd2649562876a0250e0c58840866.svg",
+    "static/media/icon-facebook.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-facebook.7b35b20b92b7efebcc4c614edbf1e5d7.svg",
+    "static/media/icon-error.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-error.7abb5cba47125d5b1483.svg",
     "static/media/icon-close.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-close.0188d73cdf017561312f7fbe7938c7e6.svg",
     "static/media/icon-hamburger.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-hamburger.4385fd507d24f37ccbb3ae359b5c9555.svg",
     "static/media/icon-arrow.svg": "/Bookmark-Landing-Page-Reactjs-Sass/static/media/icon-arrow.8174203a5d4fc44f5247b825de6e2158.svg",
-    "main.59d5ed46.css.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.59d5ed46.css.map",
-    "main.d2b074ad.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.d2b074ad.js.map"
+    "main.7e7d735e.css.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/css/main.7e7d735e.css.map",
+    "main.f827c286.js.map": "/Bookmark-Landing-Page-Reactjs-Sass/static/js/main.f827c286.js.map"
   },
   "entrypoints": [
-    "static/css/main.59d5ed46.css",
-    "static/js/main.d2b074ad.js"
+    "static/css/main.7e7d735e.css",
+    "static/js/main.f827c286.js"
   ]
 }
